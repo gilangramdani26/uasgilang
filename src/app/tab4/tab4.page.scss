@@ -1,0 +1,116 @@
+
+  
+  .header-row {
+    font-weight: bold;
+  }
+  
+  ion-row {
+    border-bottom: 1px solid #ccc; // Garis pemisah antar baris
+    padding: 10px; // Padding antar kolom
+  }
+  
+  ion-col {
+    text-align: center; // Pusatkan teks di setiap kolom
+  }
+  
+  // Media queries untuk responsivitas
+  @media (max-width: 600px) {
+    .header-row {
+      font-size: 14px; // Ukuran font lebih kecil untuk layar kecil
+    }
+  
+    ion-row {
+      font-size: 12px; // Ukuran font lebih kecil untuk layar kecil
+    }
+  }
+  ion-header {
+    ion-toolbar {
+      ion-title {
+        color: white; // Ubah warna teks judul sesuai kebutuhan
+      }
+    }
+  }
+  
+
+ 
+
+.highlight-text1 {
+  background-color: #018f01; /* Warna hijau */
+  padding: 5px 10px; /* Padding untuk menjaga jarak teks dari tepi latar belakang */
+  border-radius: 5px; /* Membuat sudut latar belakang membulat */
+  color: white; /* Warna teks putih */
+}
+.highlight-text {
+  background-color: #fa0000; /* Warna hijau */
+  padding: 5px 10px; /* Padding untuk menjaga jarak teks dari tepi latar belakang */
+  border-radius: 5px; /* Membuat sudut latar belakang membulat */
+  color: white; /* Warna teks putih */
+}
+
+  ion-header {
+    ion-toolbar {
+      --background: #3880ff; // Warna latar belakang header
+      --color: #fff; // Warna teks header
+    }
+  }
+  
+  ion-content {
+    ion-list {
+      ion-grid {
+        // Atur gaya untuk keseluruhan grid
+        border: 1px solid #ddd; // Garis tepi grid
+        border-radius: 5px; // Sudut grid melengkung
+        overflow: hidden; // Hilangkan overflow agar tampak rapi
+  
+        // Header Row
+        .header-row {
+          font-weight: bold;
+          background-color: #f2f2f2; // Warna latar belakang header row
+          border-bottom: 1px solid #ddd; // Garis bawah header row
+          ion-col {
+            padding: 10px;
+          }
+        }
+  
+        // Data Rows
+        ion-row {
+          ion-col {
+            border-bottom: 1px solid #ddd; // Garis bawah setiap data row
+            padding: 10px;
+            text-align: center;
+          }
+        }
+  
+        // Warna status
+        .status-merah {
+          background-color: #ffcccc; // Warna latar merah
+        }
+  
+        .status-hijau {
+          background-color: #ccffcc; // Warna latar hijau
+        }
+      }
+    }
+  }
+  
+  // Responsivitas
+  @media (max-width: 600px) {
+    ion-grid {
+      font-size: 14px; // Ukuran font lebih kecil untuk layar kecil
+    }
+  
+    .header-row {
+      font-size: 16px; // Ukuran font header row lebih besar untuk layar kecil
+    }
+  }
+
+ion-searchbar {
+    max-width: 200px;
+    margin: 10px 10px 10px auto; // Mengatur margin kanan agar search bar berada di sebelah kanan
+  }
+  
+  ion-content {
+    margin-top: 10px; // Menyesuaikan margin atas agar tidak menumpuk dengan header
+  }
+  
+

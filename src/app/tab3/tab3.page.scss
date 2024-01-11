@@ -1,0 +1,48 @@
+ion-content {
+  overflow-x: hidden; // Hide horizontal scrollbar
+
+  ion-card {
+    max-width: 400px;
+    margin: auto; // Center the card horizontally
+
+    ion-card-header {
+      background-color: white; // Color for the card header
+      color: white; // Text color for the card header
+
+      ion-card-title {
+        display: flex;
+        align-items: center;
+
+        ion-icon {
+          margin-right: 8px;
+        }
+      }
+    }
+
+    ion-card-content {
+      ion-list {
+        ion-item {
+          ion-label {
+            color: #3880ff; // Text color for labels
+            font-weight: bold;
+          }
+
+          ion-input,
+          ion-select {
+            border-radius: 8px; // Rounded corners for inputs and selects
+            border: 2px solid #3880ff; // Border color for inputs and selects
+            margin-top: 8px;
+            padding: 8px; // Padding for inputs and selects
+          }
+        }
+      }
+
+      ion-button {
+        margin-top: 16px;
+        background-color: #3880ff; // Color for the button
+        color: white; // Text color for the button
+        border-radius: 8px; // Rounded corners for the button
+      }
+    }
+  }
+}

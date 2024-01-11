@@ -1,0 +1,136 @@
+.event {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    padding-left: 30px; /* Sesuaikan jarak antara ikon dan teks */
+    margin-bottom: 30px; /* Sesuaikan jarak antar entri */
+  }
+  
+  .line {
+    position: absolute;
+    left: 20px; /* Sesuaikan posisi garis */
+    width: 2px; /* Sesuaikan lebar garis */
+    height: calc(100% - 10px); /* Sesuaikan tinggi garis */
+    background-color: #000; /* Sesuaikan warna garis */
+    z-index: -1; /* Letakkan garis di belakang konten */
+  }
+  
+  .highlight-text {
+    background-color: #018f01; /* Warna hijau */
+    padding: 5px 10px; /* Padding untuk menjaga jarak teks dari tepi latar belakang */
+    border-radius: 5px; /* Membuat sudut latar belakang membulat */
+    color: white; /* Warna teks putih */
+  }
+  
+  .highlight-text1 {
+    background-color: #fa0000; /* Warna hijau */
+    padding: 5px 10px; /* Padding untuk menjaga jarak teks dari tepi latar belakang */
+    border-radius: 5px; /* Membuat sudut latar belakang membulat */
+    color: white; /* Warna teks putih */
+  }
+  
+  .entry-box {
+    border: 1px solid #ccc; /* Border kotak */
+    padding: 15px; /* Padding di dalam kotak */
+    margin-bottom: 15px; /* Jarak antara kotak-kotak */
+    border-radius: 8px; /* Sudut kotak membulat */
+  }
+  
+  /* Properti teks global */
+  .event-details h1 {
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+  }
+  
+  .event-details p {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  /* Properti kelas khusus */
+  .custom-text {
+    font-size: 18px;
+    color: rgb(14, 14, 150);
+    font-weight: bold; /* Teks tebal */
+  }
+  
+  .custom-text-small {
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    font-weight: bold; /* Teks tebal */
+  }
+
+  timeline {
+    background: var(--primary-color);
+    margin: 20px auto;
+    padding: 20px;
+  }
+  
+  
+
+ 
+  .timeline {
+    position: relative;
+  }
+  
+  .event {
+    position: relative;
+    margin-bottom: 30px;
+  }
+  
+  .line {
+    position: absolute;
+    background-color: #000; /* Color of the timeline */
+    width: 2px; /* Width of the timeline */
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+  }
+  
+  .timeline .event:last-child .line {
+    height: 50%;
+  }
+  
+  .event-details {
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Add this style for horizontal lines between events */
+  .event + .event {
+    margin-top: -15px; /* Adjust this value to control the spacing between events */
+  }
+  
+  .event:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% + 30px); /* Adjust this value to control the length of the horizontal line */
+    height: 2px; /* Height of the horizontal line */
+    background-color: #000; /* Color of the horizontal line */
+    z-index: -1;
+  }
+  .outer {
+    border-left: 2px solid #333;
+  }
+  
+  .title::before {
+    content: "";
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    background: url("https://i.ibb.co/zrWjRxk/profile.webp") center/cover
+      no-repeat;
+    border-radius: 999px;
+    left: -53px;
+    border: none;
+  }
+  

@@ -1,0 +1,36 @@
+<ion-content [fullscreen]="true" class="ion-padding login-section">
+  <div class="wrapper">
+    <div class="center-text">
+      <h1>Penerimaan Mahasiswa Baru</h1>
+    </div><br>
+
+    <div class="logo">
+      <img src="../../assets/icon/unbinn.jpg" alt="">
+    </div><br>
+
+    <div class="center-text">
+      <p>Penerimaan Mahasiswa Baru</p>
+    </div>
+    <br><br>
+
+    <form (ngSubmit)="login()" class="p-3 mt-3">
+      <div class="form-field d-flex align-items-center">
+        <ion-icon name="person-outline"></ion-icon>
+        <ion-input type="text" [(ngModel)]="username" name="userName" placeholder="User Id" clearInput></ion-input>
+      </div>
+      <div class="form-field d-flex align-items-center">
+        <ion-icon name="key-outline"></ion-icon>
+        <ion-input type="password" [(ngModel)]="password" name="password" placeholder="Password" clearInput></ion-input>
+      </div>
+      <ion-button expand="full" type="submit" class="btn mt-3">Login</ion-button>
+    </form>
+
+    <div class="text-center fs-6">
+      <a href="#">Forget password?</a> or <ion-router-link routerLink="/signup">Sign up</ion-router-link>
+    </div>
+  </div>
+
+  <div *ngIf="showErrorMessage" class="error-message">
+    Invalid NPM or email. Please try again.
+  </div>
+</ion-content>

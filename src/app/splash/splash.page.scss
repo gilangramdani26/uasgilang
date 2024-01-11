@@ -1,0 +1,107 @@
+ion-content {
+  --background: linear-gradient(to bottom, #3498db, #2c3e50);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes bounce-in-fwd {
+  0% {
+    transform: scale(0);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  /* ... (the rest of your keyframes) ... */
+  100% {
+    transform: scale(1);
+    animation-timing-function: ease-out;
+  }
+}
+
+.container {
+  animation: bounce-in-fwd 6s both;
+  img {
+    height: 450px;
+    margin-top: 15%;
+    margin-right: 10px; /* Adjust the margin as needed */
+  }
+}
+
+@keyframes zigzag {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  25%, 75% {
+    transform: translateY(-10px) rotate(10deg);
+  }
+  50% {
+    transform: translateY(0) rotate(0deg);
+  }
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20%; /* Adjust as needed */
+
+  ion-icon {
+    margin: 0.5cm; /* Adjust spacing as needed */
+    animation: zigzag 6s infinite linear alternate; /* Added zigzag animation */
+  }
+}
+.text-center {
+  text-align: center;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center;
+  align-items: center;
+  height: 10%; /* You can adjust the height as needed */
+}
+
+h1 {
+  margin: 0; /* To remove any default margin */
+  color: white; /* Set text color to white */
+}
+
+img {
+  margin-top: 10px; /* Adjust the margin as needed */
+}
+h1 {
+  margin: 0; /* To remove any default margin */
+  -webkit-animation: text-pop-up-bottom 4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: text-pop-up-bottom 7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+@-webkit-keyframes text-pop-up-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    text-shadow: none;
+  }
+  100% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
+  }
+}
+@keyframes text-pop-up-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    text-shadow: none;
+  }
+  100% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
+  }
+}
+}
